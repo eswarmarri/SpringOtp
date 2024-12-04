@@ -1,0 +1,6 @@
+aws:
+  ses:
+    region: <<aws ses region>>
+    accessKeyId: <<aws ses access key>>
+    secretKey: <<aws ses secret key>>
+    senderMailId: <<aws ses sender mail id>>
