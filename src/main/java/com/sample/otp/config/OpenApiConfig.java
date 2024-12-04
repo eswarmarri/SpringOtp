@@ -16,12 +16,8 @@ public class OpenApiConfig {
     @Bean
     public OpenAPI usersMicroserviceOpenAPI() {
         return new OpenAPI()
-                .info(new Info().title("Student Tracking System")
+                .info(new Info().title("Spring otp")
                         .description("")
-                        .version("1.0"))
-
-                .addSecurityItem(new SecurityRequirement().addList("Authorization"))
-                .components(new Components().addSecuritySchemes("Authorization",
-                        new SecurityScheme().name("Authorization").type(SecurityScheme.Type.HTTP).scheme("bearer")));
+                        .version("1.0"));
     }
 }
