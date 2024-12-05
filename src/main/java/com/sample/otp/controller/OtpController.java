@@ -50,7 +50,7 @@ public class OtpController {
 		SendEmailResult result = null;
 		try {
 			otp = otpService.generateOtp(email);
-			logger.info("Otp is {}",otp);
+			//logger.info("Otp is {}",otp);
             bodyObj = new Body();
             destination = new Destination().withToAddresses(email);
             subjectContent = new Content().withData("OTP for Reset Password");
