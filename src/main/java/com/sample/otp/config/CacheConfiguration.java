@@ -24,7 +24,6 @@ public class CacheConfiguration implements CachingConfigurer {
         return new ConcurrentMapCacheManager() {
             @Override
             protected @NotNull Cache createConcurrentMapCache(final @NotNull String name) {
-            	//Configure ttl for otp in cache
                 return new ConcurrentMapCache(name,
                         CacheBuilder.newBuilder().expireAfterWrite(10, TimeUnit.MINUTES).build().asMap(), false);
             }
